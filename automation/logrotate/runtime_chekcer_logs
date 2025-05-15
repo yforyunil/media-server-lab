@@ -1,0 +1,12 @@
+/var/log/runtime_check.log {
+    daily
+    missingok
+    rotate 5
+    compress
+    delaycompress
+    notifempty
+    create 0640 root adm
+    postrotate
+        echo "Log rotated at $(date)" >> /var/log/runtime_check.log
+    endscript
+}

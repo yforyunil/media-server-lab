@@ -1,0 +1,2 @@
+#m h dom mon dow user command
+30 4 * * * root /home/yunil/runtime_check.sh
